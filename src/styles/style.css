@@ -1,0 +1,31 @@
+/* Estilo para el contenedor principal de la lista */
+.product-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Para que los elementos se acomoden si no caben en una línea */
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para cada tarjeta de producto */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilo para el precio */
+.product-price {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 1.1em;
+}
+
+/* Estilo para el título (opcional, basado en el estilo en línea original) */
+.product-list-title {
+    text-align: center;
+}
