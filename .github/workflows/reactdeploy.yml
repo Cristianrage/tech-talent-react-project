@@ -1,0 +1,35 @@
+# .github/workflows/deploy.yml
+name: Deploy React to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Cambia a 'master' si es tu rama principal
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Ajusta a la versión de Node que uses
+
+      - name: Install dependencies 🔧
+        run: npm install # Usa 'yarn install' si utilizas yarn
+
+      - name: Build project 🏗️
+        run: npm run build # O 'yarn build'
+
+      # Despliega a GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          # Token de GitHub para autenticación
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Directorio que contiene los archivos estáticos generados por el build
+          publish_dir: ./build # ¡IMPORTANTE! Cambia a './dist' si usas Vite
