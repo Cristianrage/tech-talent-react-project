@@ -4,7 +4,7 @@ name: Deploy React to GitHub Pages
 on:
   push:
     branches:
-      - main # Cambia a 'master' si es tu rama principal
+      - master # Cambia a 'master' si es tu rama principal
 
 jobs:
   build-and-deploy:
