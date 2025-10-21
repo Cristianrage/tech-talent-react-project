@@ -32,4 +32,4 @@ jobs:
           # Token de GitHub para autenticación
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # Directorio que contiene los archivos estáticos generados por el build
-          publish_dir: ./build # ¡IMPORTANTE! Cambia a './dist' si usas Vite
+          publish_dir: ./dist # ¡IMPORTANTE! Cambia a './dist' si usas Vite
