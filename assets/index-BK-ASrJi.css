@@ -1,0 +1,1 @@
+.product-container{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:20px;font-family:Arial,sans-serif}.product-card{border:1px solid #ddd;border-radius:8px;padding:16px;width:220px;text-align:center;box-shadow:0 2px 4px #0000001a}.product-price{font-weight:700;color:#007bff;font-size:1.1em}.product-list-title{text-align:center}
