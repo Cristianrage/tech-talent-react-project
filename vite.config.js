@@ -1,10 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
+// Si tu repositorio se llama 'tech-talent-react-project'
+const repoName = 'tech-talent-react-project'; 
+
 export default defineConfig({
+  // **AÑADIR ESTA LÍNEA**
+  base: `/${repoName}/`, 
   plugins: [react()],
-  // 🚨 ¡IMPORTANTE! Agrega la propiedad 'base' con el nombre de tu repositorio
-  // Reemplaza 'nombre-de-tu-repositorio' por el nombre real de tu repo en GitHub.
-  base: 'tech-talent-react-project', 
-})
+});
